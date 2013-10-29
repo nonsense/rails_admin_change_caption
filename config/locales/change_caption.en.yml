@@ -1,0 +1,11 @@
+
+en:
+  admin:
+    actions:
+      change_caption:
+        title: "Change Caption"
+        menu: "Change Caption for %{model_label} '%{object_label}'"
+        breadcrumb: "Change Caption"
+        link: "Change Caption"
+        bulk_link: "Change Caption selected %{model_label_plural}"
+        done: "Change Captioned"
