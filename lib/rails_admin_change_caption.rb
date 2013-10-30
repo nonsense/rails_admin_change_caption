@@ -21,11 +21,10 @@ module RailsAdmin
 
             if request.post?
 
-              captions = params[:bulk_ids].zip params[:photo_caption]
+              ids = params[:bulk_ids]
 
-              captions.each do |caption|
-                id = caption[0]
-                text = caption[1]
+              ids.each do |id|
+                text = params[("photo_caption_" + id.to_s).to_sym]
 
                 p = Photo.find(id)
                 p.caption = text
